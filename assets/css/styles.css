@@ -10,6 +10,11 @@ html {
     font-size: 62.5%;
 }
 
+html, 
+body {
+    scroll-behavior: smooth; /*hành động cuộn từ thẻ cha xuống phần nội dung mượt mà*/
+}
+
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
@@ -63,7 +68,7 @@ a {
 .hero-wrap {
     position: relative;
     background: #E6F0FF;
-    height: 100vh;
+    height: calc(100vh - 90px); /* Adjust height to account for fixed header */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Use column layout for header */
 }
