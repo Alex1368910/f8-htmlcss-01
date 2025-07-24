@@ -13,7 +13,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
-
 }
 
 /* """"""""""Common"""""""""" */
@@ -51,18 +50,30 @@ a {
     overflow: hidden;
 }
 
-/* """"""""header"""""""" */
-.header {
+/* """"""""fix-header"""""""" */
+.fix-header {
+    background: #de067d;
+    padding-top: 26px;
+    position: sticky; /* Make the header sticky */
+    top: -26px;
+    z-index: 1; /* Ensure it stays above other content */
+}
+/* """"""""header""""""""" */
+.hero-wrap {
     position: relative;
-    background-color: #E6F0FF;
+    background: #E6F0FF;
     height: 100vh;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Use column layout for header */
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 12px;
+    background-color: #0cecca;
+    border-radius: 12px;
 }
 
 .navbar ul {
@@ -466,8 +477,8 @@ a {
 .stats .img-block .image {
     display: block;
     margin-left: auto;
-    width: 400px;
-    height: 460px;
+    width: 280px;
+    height: 400px;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -642,3 +653,4 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
 }
+
