@@ -58,6 +58,7 @@ a {
     top: -26px;
     z-index: 1; /* Ensure it stays above other content */
 }
+
 /* """"""""header""""""""" */
 .hero-wrap {
     position: relative;
